@@ -1,0 +1,13 @@
+- model: contact.contact
+  fields:
+    name: Iana
+    surname: Konkina
+    birth_date: 1986-12-06
+    email: konkina.iana@gmail.com
+    phone_number: +380999069815
+    biography: TO DO
+
+- model: auth.user
+  fields:
+    username: admin
+    password: admin
