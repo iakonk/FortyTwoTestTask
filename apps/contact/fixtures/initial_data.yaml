@@ -5,9 +5,11 @@
     birth_date: 1986-12-06
     email: konkina.iana@gmail.com
     phone_number: +380999069815
-    biography: TO DO
+    skype: konkina.yana
+    biography: "I am passionate about creating WEB-applications using Python/Django tools :) I am also experienced in DevOPS techniques. Currently I am working on my own project : http://coookit.org."
 
 - model: auth.user
+  pk: 100000
   fields:
     username: admin
-    password: admin
+    password: "pbkdf2_sha256$12000$6h1eplOIbTun$KOati0T21DZfbPqL9ZIpY7D7lmTmPnF3kRtRwVMwGrk="

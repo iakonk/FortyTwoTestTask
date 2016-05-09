@@ -14,5 +14,13 @@ class Contact(models.Model):
     birth_date = models.DateField('Date of Birth', auto_now=False, auto_now_add=False)
     email = models.EmailField('Email address', max_length=255)
     phone_number = models.CharField('Contact phone number', max_length=15, validators=[phone_regex], blank=True)
+    skype = models.CharField('Skype contact', max_length=25, blank=True)
     biography = models.TextField('Biography', max_length=500)
+
+    def __unicode__(self):
+        return u'%s %s' % (self.name, self.surname)
+
+    class Meta:
+        ordering = ['surname']
+        db_table = 'contacts_list'
 
